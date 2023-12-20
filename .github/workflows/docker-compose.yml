@@ -31,7 +31,7 @@ jobs:
             username: ${{ github.actor }}
             password: ${{ secrets.GITHUB_TOKEN}}
 
-      - run: docker build -t ghcr.io/h0lonar/node-with-compose:1.0 
+      - run: docker build -t ghcr.io/h0lonar/380-node-2-app:1.0 node/
       - run: docker push  ghcr.io/h0lonar/node-with-compose:1.0
 
       - run: docker build -t ghcr.io/h0lonar/puthon-with-compose:1.0
