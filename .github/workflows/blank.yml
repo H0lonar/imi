@@ -31,10 +31,10 @@ jobs:
             username: ${{ github.actor }}
             password: ${{ secrets.GITHUB_TOKEN}}
 
-      - run: docker build -t ghcr.io/h0lonar/node_1-app:1.0
-      - run: docker push  ghcr.io/h0lonar/node_1-app:1.0
+      - run: docker build -t ghcr.io/h0lonar/nodejs-app:1.0
+      - run: docker push  ghcr.io/h0lonar/nodejs-app:1.0
 
-      - run: docker build -t ghcr.io/h0lonar/puthon_1-app:1.0
-      - run: docker push ghcr.io/h0lonar/puthon_1-app:1.0
+      - run: docker build -t ghcr.io/h0lonar/python_1-app:1.0
+      - run: docker push ghcr.io/h0lonar/python_1-app:1.0
 
      
