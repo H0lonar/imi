@@ -50,6 +50,6 @@ jobs:
             username: ${{ github.actor }}
             password: ${{ secrets.GITHUB_TOKEN}}
 
-      - run: scp -o "StrictHostKeyChecking no” docker-compose.yml 'whywelive-nketemplate-ikdry3xo9et#mra2Q0Yu1TB.fHpr4-kCVy7hKiWZ-aXu@whywelive-nketemplate-ikdry3xo9et.ssh.ws-eu107.gitpod.io':/workspace/nke-template
-      - run: ssh -o "StrictHostKeyChecking no” 'whywelive-nketemplate-ikdry3xo9et#mra2Q0Yu1TB.fHpr4-kCVy7hKiWZ-aXu@whywelive-nketemplate-ikdry3xo9et.ssh.ws-eu107.gitpod.io' “cd /workspace/nke-template && docker compose pull && docker-compose up -d”
+      - run: scp -o "StrictHostKeyChecking no" docker-compose.yml 'whywelive-nketemplate-ikdry3xo9et#mra2Q0Yu1TB.fHpr4-kCVy7hKiWZ-aXu@whywelive-nketemplate-ikdry3xo9et.ssh.ws-eu107.gitpod.io':/workspace/nke-template
+      - run: ssh -o "StrictHostKeyChecking no" 'whywelive-nketemplate-ikdry3xo9et#mra2Q0Yu1TB.fHpr4-kCVy7hKiWZ-aXu@whywelive-nketemplate-ikdry3xo9et.ssh.ws-eu107.gitpod.io' “cd /workspace/nke-template && docker compose pull && docker-compose up -d”
       
