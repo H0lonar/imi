@@ -34,7 +34,7 @@ jobs:
       - run: docker build -t ghcr.io/h0lonar/node_1-compose:1.0
       - run: docker push  ghcr.io/h0lonar/node_1-compose:1.0
 
-      - run: docker build -t ghcr.io/h0lonar/puthon-with_1-compose:1.0
-      - run: docker push ghcr.io/h0lonar/puthon-with_1-compose:1.0
+      - run: docker build -t ghcr.io/h0lonar/puthon_1-compose:1.0
+      - run: docker push ghcr.io/h0lonar/puthon_1-compose:1.0
 
      
