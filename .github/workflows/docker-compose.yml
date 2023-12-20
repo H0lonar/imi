@@ -31,10 +31,10 @@ jobs:
             username: ${{ github.actor }}
             password: ${{ secrets.GITHUB_TOKEN}}
 
-      - run: docker build -t ghcr.io/h0lonar/node-with-compose:1.0 .github/imi/nodejs
+      - run: docker build -t ghcr.io/h0lonar/node-with-compose:1.0 .imi/nodejs
       - run: docker push  ghcr.io/h0lonar/node-with-compose:1.0
 
-      - run: docker build -t ghcr.io/h0lonar/puthon-with-compose:1.0 .github/imi/python
+      - run: docker build -t ghcr.io/h0lonar/puthon-with-compose:1.0 .imi/python
       - run: docker push ghcr.io/h0lonar/puthon-with-compose:1.0
 
      
