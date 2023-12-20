@@ -4,4 +4,9 @@ services:
   node:
      image: ghcr.io/h0lonar/node_1-compose:1.0
      restsrt: unless-stopped
-     container_name:
+     container_name: node-app
+
+  python:
+      image: ghcr.io/h0lonar/node_1-compose:1.0
+      restsrt: unless-stopped
+      container_name: python-app
