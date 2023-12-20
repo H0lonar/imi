@@ -1,1 +1,7 @@
+version: "3.9"
 
+services:
+  node:
+     image: ghcr.io/h0lonar/node_1-compose:1.0
+     restsrt: unless-stopped
+     container_name:
